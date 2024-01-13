@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <title>Ascend | Book appointment</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+
+
+<body>
+<header>
+    <div class="container-large">
+        <nav>
+                 <div class="logo">
+                <h1>
+                    <a href="index.html">Ascend</a>
+                </h1>
+            </div>
+            <div class="navbar">
+                <ul class="main-navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reviews.html">Testinomials</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact.html" class="active">Contact US</a></li>
+                    <li><a href="map.html">Site Map</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div class="appointment">
+    <div class="main">
+        <div class="container">
+            <div class="new">
+                <form name="formData" id="formData" onsubmit="return validation()">
+                    <fieldset>
+                        <legend>Book appointment</legend>
+                        <input type="text" name="fullname" id="fullname" placeholder="Enter Hospital Name "><br/><br/>
+                        
+						
+                        <input type="email" name="email" id="email" placeholder="Enter Email Address"><br/><br/>
+                        
+                        <textarea rows="5" cols="25" id="message" placeholder="Enter Your Message"></textarea><br/>
+                        <button type="button" id="clear">Clear</button>
+                        <button type="submit" id="send">Send</button>
+                    </fieldset>
+                </form>
+                <br/>
+                <a href="http://www.facebook.com" style="color: white;">Contact Us on Facebook</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('clear').onclick = function(){
+        document.getElementById('fullname').value = '';
+		document.getElementById('docname').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('age').value = '';
+        document.getElementById('message').value = '';
+    }
+
+    function validation() {
+        let fn = document.forms["formData"]["fullname"].value;
+        if (fn == "") {
+            alert("Full Name is required.");
+            return false;
+        }
+
+        let x = document.getElementById("age").value;
+
+        if (isNaN(x) || x < 1 || x > 10) {
+            alert("Input not valid");
+            return false;
+        } else {
+            alert("Your appointment has been booked");
+        }
+    }
+</script>
+</body>
+</html>

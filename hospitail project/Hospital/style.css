@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #112526!;
+}
+
+header{
+    background: #112526;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    z-index: 10000;
+    position: fixed;
+}
+
+.container:first-letter{
+	font-size: 30px;
+}
+
+.container-large{
+	font-style:italic;
+    width: 95%;
+    margin: auto;
+}
+
+.container{
+    width: 75%;
+    margin: auto;
+}
+
+nav{
+    background-color: transparent;
+    display: flex;
+}
+
+nav .logo h1{
+    margin-top: 1.3em;
+}
+
+nav .logo a{
+    color: #6ff3ff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+nav .navbar{
+    height: auto;
+    margin-left: auto;
+}
+
+
+nav .main-navbar li{
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+
+nav .main-navbar li a{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding: 0;
+    position: relative;
+}
+
+nav .main-navbar li a.active{
+    color: #6ff3ff;
+    font-weight: bold;
+}
+
+.main{
+    margin-top: 90px;
+    text-align: center;
+}
+
+.main img{
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.background{
+    height: 10%;
+    max-height: 10%;
+    background: url("img/background.jpg") fixed no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+.background-back{
+    background-color: rgba(17, 37, 38, 0.8);
+    /*color: white;*/
+}
+
+.background .background-back .new-header h3 {
+    color: white;
+}
+
+.Radiology{
+	 height: 100vh;
+    background: url("img/Radiology.jpg") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.icu{
+	height: 100vh;
+    background: url("img/icu.jpg") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.surgery{
+	height: 100vh;
+    background: url("img/sur.jpg") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.about{
+    height: 100vh;
+    background: url("img/background2.jpg") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.appointment{
+    height: 100vh;
+    background: url("img/background2.jpg") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+
+.icu .main, .surgery .main, .about .main, .Radiology .main, .appointment .main{
+    background-color: rgba(17, 37, 38, 0.8);
+}
+
+.icu .main p, .surgery .main p, .about .main p, .Radiology .main p{
+   margin: 9px;
+   padding: 30px;
+   font-size: 20px;
+}
+
+.appointment fieldset{
+    padding: 70px;
+}
+
+.appointmentt input, .appointment select, .appointment textarea{
+    padding: 5px;
+    margin: 10px;
+}
+.appointment button {
+    background: transparent;
+    color: #ffffff;
+    padding: 15px 30px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: #ffffff solid 1px;
+}
+
+}
+.main .new{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.new p, .new li{
+    line-height: 20px;
+}
+.new ol{
+    display: table;
+    margin: 0 auto;
+}
+
+.main .new-header{
+    margin-bottom: 40px;
+}
+
+.main .new-header h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #112526;
+    margin-bottom: 5px;
+}
+
+.main .new-header hr{
+    width: 100px;
+    border-style: solid;
+    background: #112526;
+    position: relative;
+    margin: 1px auto;
+}
+
+.col{
+    display: inline-block;
+    width: 40%;
+    height: 200px;
+    margin: 40px;
+}
+.col h3{
+    width: 100%;
+    background: #112526;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+.col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border: #112526 solid 10px;
+}
+
+
+footer{
+    background-color: #112526;
+    padding: 30px;
+}
+
